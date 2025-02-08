@@ -8,7 +8,7 @@ async function updateVisitCounter() {
         
         if (data && data.data && data.data.length > 0) {
             const visits = data.data[0].visits;
-            COUNTER_ELEMENT.innerHTML = `Total Visits: <span style="color: red;">${visits.toLocaleString()}</span>`;
+            COUNTER_ELEMENT.innerHTML = `Doors Visits Count: <span style="color: red;">${visits.toLocaleString()}</span>`;
         } else {
             COUNTER_ELEMENT.innerHTML = "Failed to load visits.";
         }
